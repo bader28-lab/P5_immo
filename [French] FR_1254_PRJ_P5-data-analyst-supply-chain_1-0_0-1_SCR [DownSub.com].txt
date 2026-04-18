@@ -1,0 +1,132 @@
+Bonjour à tous.
+Aujourd’hui, tuto simple pour créer
+une base de données dans SQLiteStudio
+à partir d'un fichier CSV.
+Donc ici, on a déjà SQLiteStudio,
+donc la version 3.4.1,
+qu'on a téléchargée préalablement,
+et un fichier CSV qui contient des
+données.
+Donc là, j'ai pris un fichier qui
+vient de Kaggle et qui liste les
+10 000 premières chansons écoutées
+sur Spotify.
+Donc la première étape qu'on va
+compléter, c'est créer une base
+de données.
+Donc ici, vous avez une icône,
+on vient cliquer dessus.
+Donc le nom du fichier,
+je vais l'appeler Spotify,
+ça va être le nom de votre base
+de données.
+Là, ici, vous pouvez choisir où
+vous l'enregistrez.
+C'est bon.
+Test connexion, OK.
+Et la base de données est créée.
+Maintenant, vous ne pouvez pas
+directement importer le fichier
+CSV dans SQLiteStudio.
+Dans d'autres systèmes,
+vous pouvez.
+Là avec SQLiteStudio,
+il ne vous permet pas ça.
+Donc ce qu'on va faire dans un premier
+temps, c'est créer une table qui
+va pouvoir recevoir les données
+qui viennent du CSV.
+Donc, pour créer une table dans
+une base de données, vous sélectionnez
+la base de données, clic droit,
+Create table.
+Là, vous donnez le nom de votre table.
+Aujourd'hui, je décide de ne pas
+m'ennuyer, ce sera Spotify.
+Et ici, vous venez créer une colonne.
+Donc les colonnes.
+Ça va être les un, deux,
+trois, quatre, cinq, six,
+sept, huit, neuf colonnes que vous
+avez dans votre fichier CSV.
+Si votre fichier CSV en a dix,
+vous en prenez dix.
+Et on va créer ces colonnes-là.
+Donc la première colonne,
+elle s'appelle Position.
+Hop, ce sera la primary key.
+Le Data type, c'est un Integer,
+et on va faire OK, on ne va pas
+s'ennuyer.
+Et je vais faire ça pour…
+en fait, chaque colonne,
+on va créer ça.
+OK.
+Une fois que vous avez ajouté toutes
+vos colonnes, pensez bien à commiter
+les changements.
+Voilà, c'est fait.
+Maintenant, on va importer des données
+dans la table.
+Donc clic droit sur la table.
+Import data, Import into the table.
+Donc la base de données,
+c'est Spotify.
+La table, on va le mettre dans la
+table Spotify, on vient chercher
+un fichier de type CSV qu'on vient
+chercher dans notre dossier.
+On vient cocher la case first line
+represents CSV column names.
+En effet, si on regarde le CSV,
+la première ligne, c'est bien le
+nom des colonnes qui est utilisé,
+on vient cocher cette case.
+Et c'est parti.
+Et voilà, et là, les données ont
+été enregistrées.
+Donc une fois que les données sont
+enregistrées, on va passer maintenant
+aux requêtes SQL.
+Donc, je vais cliquer sur cet onglet
+ici.
+Voilà, ça va m'ouvrir.
+Un onglet qui s'appelle SQL Editor 2.
+Et donc on voit qu'il y a plusieurs
+onglets ouverts qui sont ici.
+On revient.
+Voilà, on peut les fermer,
+il n’y a pas de soucis.
+Et si on veut ouvrir une autre fenêtre,
+juste pour écrire, ça vient ouvrir
+plusieurs fenêtres.
+Donc on va fermer toutes les autres
+fenêtres et on va pouvoir commencer
+à écrire des requêtes SQL.
+Maintenant, on va pouvoir commencer
+nos requêtes SQL.
+Donc on va faire une requête basique.
+On va sélectionner toutes les données
+depuis la table Spotify.
+Et en fait, on va prendre les dix
+premières requêtes en fonction du
+total stream.
+Donc on va faire un Order by total
+stream.
+Donc là, il va venir prendre le
+total stream, donc dans le mode
+ascending.
+Donc nous on le veut dans le mode
+descending, du plus grand au plus petit,
+ordre décroissant.
+Et on vient prendre les dix premiers.
+On lance la requête et voilà.
+Maintenant, vous avez toutes les
+bases pour commencer sereinement
+sur SQLiteStudio, sur comment créer
+une base de données, comment importer
+des données dans une table,
+comment créer une table et comment
+faire des requêtes simples avec
+SQLiteStudio.
+Bon courage !
